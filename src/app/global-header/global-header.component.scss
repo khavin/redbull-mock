@@ -1,0 +1,54 @@
+$header-icon-opacity: rgb(255, 255, 255, 0.6);
+$header-icon-scale: scale(0.833333);
+$header-icon-hover-color: #fff;
+
+.global-header {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+}
+.global-header-content-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0 8px 16px;
+}
+.global-header-content-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0;
+}
+.global-header-content-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 16px 8px 0;
+}
+.global-header-menu-icon {
+  width: 24px;
+  height: 24px;
+  transform: $header-icon-scale;
+  fill: $header-icon-opacity;
+}
+.global-header-red-bull-icon {
+  height: 24px;
+  width: 44px;
+  transform: $header-icon-scale;
+  opacity: 0.6;
+}
+.global-header-red-bull-icon:hover {
+  opacity: 1;
+}
+.global-header-menu-icon:hover {
+  fill: $header-icon-hover-color;
+}
+.global-header-search-icon {
+  height: 24px;
+  width: 24px;
+  fill: $header-icon-opacity;
+  transform: $header-icon-scale;
+}
+.global-header-search-icon:hover {
+  fill: $header-icon-hover-color;
+}

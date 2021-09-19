@@ -2,7 +2,16 @@ $header-icon-opacity: rgb(255, 255, 255, 0.6);
 $header-icon-scale: scale(0.833333);
 $header-icon-hover-color: #fff;
 
+nav {
+  height: 36px;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+}
+
 .global-header {
+  height: inherit;
   background-color: var(--primary-color);
   display: flex;
   justify-content: space-between;

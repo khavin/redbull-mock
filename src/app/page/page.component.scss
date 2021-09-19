@@ -1,0 +1,33 @@
+.page-content {
+  margin-top: 36px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.home-layer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 36px;
+}
+.carousel-container {
+  height: 520px;
+}
+:host ::ng-deep .carousel-container > img {
+  height: 634px;
+}
+@media (min-width: 650px) {
+  .carousel-container {
+    height: 640px;
+  }
+  :host ::ng-deep .carousel-container > img {
+    height: 754px;
+  }
+}
+@media (min-width: 1000px) {
+  .carousel-container {
+    height: 752px;
+  }
+  :host ::ng-deep .carousel-container > img {
+    height: 866px;
+  }
+}

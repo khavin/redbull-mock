@@ -1,3 +1,25 @@
-.wrapper {
-  background-color: var(--primary-color);
+:host ::ng-deep .wrapper {
+  --header-height: 36px;
+}
+.header {
+  display: block;
+}
+.page-content {
+  display: block;
+  margin-top: var(--header-height);
+}
+.header:hover ~ .page-content {
+  display: block;
+  animation-name: header_animation;
+  animation-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+@keyframes header_animation {
+  0% {
+    --header-height: 36px;
+  }
+  100% {
+    --header-height: 44px;
+  }
 }

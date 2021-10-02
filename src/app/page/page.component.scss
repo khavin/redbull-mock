@@ -1,5 +1,4 @@
 .page-content {
-  margin-top: 36px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
@@ -7,7 +6,7 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  top: 36px;
+  top: var(--header-height);
 }
 .carousel-container {
   height: 520px;
@@ -30,4 +29,9 @@
   :host ::ng-deep .carousel-container > img {
     height: 866px;
   }
+}
+.test {
+  height: 400px;
+  background-color: var(--primary-color);
+  color: white;
 }

@@ -6,20 +6,22 @@
 }
 .page-content {
   display: block;
+  transition: margin-top 0.2s ease-out;
   margin-top: var(--header-height);
 }
 .header:hover ~ .page-content {
   display: block;
-  animation-name: header_animation;
-  animation-duration: 0.5s;
-  transition-timing-function: ease-out;
+  --header-height: 42px;
+  // animation-name: header_animation;
+  // animation-duration: 0.5s;
+  // transition-timing-function: linear;
 }
 
-@keyframes header_animation {
-  0% {
-    --header-height: 36px;
-  }
-  100% {
-    --header-height: 44px;
-  }
-}
+// @keyframes header_animation {
+//   0% {
+//     --header-height: 36px;
+//   }
+//   100% {
+//     --header-height: 90px;
+//   }
+// }

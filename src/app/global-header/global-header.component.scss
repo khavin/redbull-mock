@@ -46,19 +46,41 @@ nav {
   fill: $icon-opacity-on-hover;
   background-color: $icon-hover-background-color;
 }
-.global-header-red-bull-icon {
+.global-header-red-bull-icon-text {
   box-sizing: content-box;
   padding: $icon-padding;
-  border-radius: 50%;
+  border-radius: 80px;
   transition: $icon-transition;
   height: 24px;
-  width: 44px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transform: scale(var(--header-icon-scale));
   opacity: 0.6;
+  --logo-translate-x: 50px;
+  --logo-text-translate-x: -15px;
+  --logo-text-opacity: 0;
 }
-.global-header-red-bull-icon:hover {
+.red-bull-icon {
+  width: 44px;
+  display: block;
+  transform: translateX(var(--logo-translate-x));
+  transition: 0.2s ease-out;
+}
+.red-bull-text {
+  opacity: var(--logo-text-opacity);
+  transform: translateX(var(--logo-text-translate-x));
+  transition: 0.2s ease-out;
+  color: #fff;
+  margin-left: 10px;
+}
+.global-header-red-bull-icon-text:hover {
   opacity: 1;
   background-color: $icon-hover-background-color;
+  --logo-translate-x: 0;
+  --logo-text-translate-x: 0;
+  --logo-text-opacity: 1;
 }
 .global-header-search-icon {
   box-sizing: content-box;
@@ -71,6 +93,6 @@ nav {
   transform: scale(var(--header-icon-scale));
 }
 .global-header-search-icon:hover {
-  opacity: $icon-opacity-on-hover;
+  fill: $icon-opacity-on-hover;
   background-color: $icon-hover-background-color;
 }

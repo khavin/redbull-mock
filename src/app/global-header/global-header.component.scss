@@ -1,12 +1,13 @@
-$header-icon-opacity: rgb(255, 255, 255, 0.6);
-$header-icon-scale: scale(0.833333);
-$header-icon-hover-color: #fff;
+$icon-opacity: rgb(255, 255, 255, 0.6);
+$icon-opacity-on-hover: #fff;
+$icon-hover-background-color: rgb(255, 255, 255, 0.2);
+$icon-padding: 7px;
+$icon-transition: transform 0.2s ease-out, background-color 0.2s ease-in;
 
 nav {
   height: 100%;
   width: 100%;
 }
-
 .global-header {
   height: inherit;
   background-color: var(--primary-color);
@@ -32,29 +33,44 @@ nav {
   margin: 8px 16px 8px 0;
 }
 .global-header-menu-icon {
+  box-sizing: content-box;
   width: 24px;
   height: 24px;
-  transform: $header-icon-scale;
-  fill: $header-icon-opacity;
+  padding: $icon-padding;
+  border-radius: 50%;
+  transition: $icon-transition;
+  transform: scale(var(--header-icon-scale));
+  fill: $icon-opacity;
+}
+.global-header-menu-icon:hover {
+  fill: $icon-opacity-on-hover;
+  background-color: $icon-hover-background-color;
 }
 .global-header-red-bull-icon {
+  box-sizing: content-box;
+  padding: $icon-padding;
+  border-radius: 50%;
+  transition: $icon-transition;
   height: 24px;
   width: 44px;
-  transform: $header-icon-scale;
+  transform: scale(var(--header-icon-scale));
   opacity: 0.6;
 }
 .global-header-red-bull-icon:hover {
   opacity: 1;
-}
-.global-header-menu-icon:hover {
-  fill: $header-icon-hover-color;
+  background-color: $icon-hover-background-color;
 }
 .global-header-search-icon {
+  box-sizing: content-box;
+  padding: $icon-padding;
+  border-radius: 50%;
   height: 24px;
   width: 24px;
-  fill: $header-icon-opacity;
-  transform: $header-icon-scale;
+  transition: $icon-transition;
+  fill: $icon-opacity;
+  transform: scale(var(--header-icon-scale));
 }
 .global-header-search-icon:hover {
-  fill: $header-icon-hover-color;
+  opacity: $icon-opacity-on-hover;
+  background-color: $icon-hover-background-color;
 }

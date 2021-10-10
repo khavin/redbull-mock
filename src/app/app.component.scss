@@ -5,7 +5,7 @@
 .header {
   display: block;
   height: var(--header-height);
-  transition: height 0.2s ease-out;
+  transition: height 0.2s ease-out, z-index 0.2s ease-out;
   position: fixed;
   top: 0px;
   left: 0px;

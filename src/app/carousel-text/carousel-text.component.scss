@@ -1,0 +1,66 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  color: white;
+}
+.highlightedStory {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.storyCategory {
+  font-size: 16px;
+  font-weight: 700;
+}
+.storyTitle {
+  font-size: 60px;
+  font-weight: 700;
+}
+.storyButton {
+  background-color: var(--red-bull-red);
+  box-sizing: border-box;
+  margin: 32px 0;
+  padding: 10px 24px;
+  cursor: pointer;
+  width: 200px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.storyButton:hover {
+  background-color: var(--red-bull-red-on-hover);
+}
+.storyList {
+  display: flex;
+}
+.listItem {
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  width: 180px;
+  padding-right: 16px;
+  margin-bottom: 32px;
+}
+.timelineProgressBarPlumbing {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 16px;
+  position: relative;
+}
+.timelineProgressBar {
+  width: 0%;
+}
+.timelineProgressBarPlumbing:hover {
+  .timelineProgressBar {
+    position: absolute;
+    left: 0;
+    background-color: yellow;
+    height: 2px;
+    width: 100%;
+    transition: width 2s ease-in;
+  }
+}

@@ -2,12 +2,15 @@
 $primary-color: #001c39;
 :root {
   --primary-color: #{$primary-color};
+  --red-bull-red: rgb(219, 10, 64);
+  --red-bull-red-on-hover: #f30b47;
 }
 body {
   margin: 0;
   border: 0;
   padding: 0;
   background-color: var(--primary-color);
+  font-family: sans-serif;
 }
 button {
   border: 0;

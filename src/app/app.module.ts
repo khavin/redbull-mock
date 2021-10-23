@@ -8,6 +8,7 @@ import { RedbullLogoComponent } from './redbull-logo/redbull-logo.component';
 import { PageComponent } from './page/page.component';
 import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
 import { CarouselListItemComponent } from './carousel-list-item/carousel-list-item.component';
+import { CarouselTextComponent } from './carousel-text/carousel-text.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +17,11 @@ import { CarouselListItemComponent } from './carousel-list-item/carousel-list-it
     RedbullLogoComponent,
     PageComponent,
     ImageCarouselComponent,
-    CarouselListItemComponent
+    CarouselListItemComponent,
+    CarouselTextComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

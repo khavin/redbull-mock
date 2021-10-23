@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="stories">
+    <div class="highlightedStory">
+      <div class="storyCategory">F1</div>
+      <div class="storyTitle">Quiz: US Special</div>
+      <div class="storyButton">Read Story</div>
+      <div class="storyList">
+        <div *ngFor="let story of storyList" class="listItem">
+          <div class="timelineProgressBarPlumbing">
+            <div class="timelineProgressBar"></div>
+          </div>
+          <div>{{ story }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="happening-now">GP Map</div>
+</div>

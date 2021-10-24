@@ -12,13 +12,18 @@
 .storyCategory {
   font-size: 16px;
   font-weight: 700;
-  transition: all 0.5s ease-in;
+  animation-name: fade-in-category;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+}
+.storyTitles {
+  display: flex;
+  align-items: center;
 }
 .storyTitle {
   font-size: 60px;
   font-weight: 700;
   display: none;
-  transition: all 4s ease-in;
 }
 .storyButton {
   background-color: var(--red-bull-red);
@@ -32,6 +37,9 @@
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  animation-name: fade-in-button;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
 }
 .storyButton:hover {
   background-color: var(--red-bull-red-on-hover);
@@ -69,8 +77,17 @@
 .active {
   .storyTitle {
     display: block;
+    animation-name: fade-in-title;
+    animation-duration: 3.5s;
   }
 }
+// .moveOut {
+//   .storyTitle {
+//     display: block;
+//     animation-name: fade-out;
+//     animation-duration: 1s;
+//   }
+// }
 .active {
   .listItemDesc {
     opacity: 1;
@@ -89,5 +106,59 @@
     height: 2px;
     width: 100%;
     transition: width 3s ease-in;
+  }
+}
+@keyframes fade-in-category {
+  0% {
+    transform: translateX(20%);
+    opacity: 0.75;
+  }
+  10% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  93% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-15%);
+  }
+}
+@keyframes fade-in-title {
+  0% {
+    transform: translateX(500%);
+    opacity: 1;
+  }
+  10% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  90% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+}
+@keyframes fade-in-button {
+  0% {
+    transform: translateX(20%);
+    opacity: 0.75;
+  }
+  10% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  83% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-15%);
   }
 }

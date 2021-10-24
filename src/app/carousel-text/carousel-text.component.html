@@ -2,8 +2,12 @@
   <div class="stories">
     <div class="highlightedStory">
       <div class="storyCategory">{{ storyList[currentStory]["category"] }}</div>
-      <div *ngFor="let story of storyList; let i = index">
-        <div [class.active]="i == currentStory">
+      <div class="storyTitles">
+        <div
+          *ngFor="let story of storyList; let i = index"
+          [class.active]="i == currentStory"
+          [class.moveOut]="(i + 1) % totalStoryCount == currentStory"
+        >
           <span class="storyTitle">
             {{ storyList[i]["title"] }}
           </span>
@@ -22,5 +26,5 @@
       </div>
     </div>
   </div>
-  <div class="happening-now">GP Map</div>
+  <div class="happeningNow">GP Map</div>
 </div>

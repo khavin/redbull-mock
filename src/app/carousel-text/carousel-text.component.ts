@@ -15,7 +15,7 @@ export class CarouselTextComponent implements OnInit {
   storyList: Array<storyListItem> = [];
   currentStory: number = 0;
   totalStoryCount: number = 5;
-  storyChangetimer = timer(3000, 3500);
+  storyChangetimer = timer(3500, 3500);
   rxjsSubscriptions: Array<Subscription> = [];
 
   constructor() {}
